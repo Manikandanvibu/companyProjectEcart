@@ -11,6 +11,9 @@ import { DeleteProductComponent } from './delete-product/delete-product.componen
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './PIPE/filter.pipe';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { CartComponent } from './cart/cart.component';
 @NgModule({
   declarations: [
     ProductComponent,
@@ -19,7 +22,10 @@ import { FilterPipe } from './PIPE/filter.pipe';
     AddProductComponent,
     EditProductComponent,
     DeleteProductComponent,
-    FilterPipe
+    FilterPipe,
+    LoginComponent,
+    RegisterComponent,
+    CartComponent,
   ],
   imports: [
     CommonModule,

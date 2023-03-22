@@ -10,6 +10,7 @@
                 <div class="fs-5 mb-5">
                     <span style="color: blue;">{{productdata.price}} RS</span><br>
                     <span>Rating : {{productdata.rating}}</span><br>
+                    <span>Discount : {{productdata.discount}}</span><br>
                     <span>Review : {{productdata.review}}</span>
                 </div>
                 <p class="lead">{{productdata.description}}</p>
@@ -22,6 +23,12 @@
                         <i class="bi-cart-fill me-1"></i>
                         <a href="product/delete-product/{{productdata.id}}" style="text-decoration: none;color: aliceblue">delete</a>
                     </button>
+
+                    <button class="btn btn-secondary flex-shrink-0 me-3" type="button" style="width: 6rem;">
+                        <i class="bi-cart-fill me-1"></i>
+                        <a style="text-decoration: none;color: aliceblue" (click)="addtocart()">Add to cart</a>
+                    </button>
+
                 </div>
             </div>
         </div>

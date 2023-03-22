@@ -4,14 +4,15 @@
       "id": 4,
       "productName": "Women Dress",
       "categoryId": 2,
-      "description": "Casual dress",
+      "description": "Casual dress-",
       "price": "1000",
       "is_available": true,
       "productImg": "https://i.postimg.cc/MK8GJchv/w1.jpg",
       "rating": 4.3,
       "review": "good dress",
       "vendor_name": "Chennai Textiles",
-      "warranty": "3"
+      "warranty": "3",
+      "discount": "6%"
     },
     {
       "id": 7,
@@ -24,7 +25,8 @@
       "rating": 4.8,
       "review": "value for money",
       "vendor_name": "Kudumbi Textiles",
-      "warranty": 1
+      "warranty": 1,
+      "discount": "15%"
     },
     {
       "id": 8,
@@ -37,7 +39,8 @@
       "rating": 4.8,
       "review": "value for money",
       "vendor_name": "Munni Textiles",
-      "warranty": 1
+      "warranty": 1,
+      "discount": "25%"
     },
     {
       "id": "9",
@@ -50,7 +53,8 @@
       "rating": "4",
       "review": "good laptop",
       "vendor_name": "Lenovo",
-      "warranty": 2
+      "warranty": 2,
+      "discount": "20%"
     },
     {
       "id": "11",
@@ -63,7 +67,8 @@
       "rating": "5",
       "review": "pure gold",
       "vendor_name": "Ramu",
-      "warranty": "2"
+      "warranty": "2",
+      "discount": "35%"
     },
     {
       "id": "12",
@@ -115,14 +120,15 @@
       "rating": "3",
       "review": "average product",
       "vendor_name": "suman",
-      "warranty": "3"
+      "warranty": "3",
+      "discount": "32%"
     },
     {
       "id": "16",
       "productName": "YouBella Jewellery Set for Women",
       "categoryId": "3",
       "description": "American Diamond Combo of Necklace Set with Earrings, Bracelet and Ring for Girls and Women",
-      "price": "900",
+      "price": "950",
       "is_available": "yes",
       "productImg": "https://i.postimg.cc/PJGxdZZ8/41-u9-Ad2-AJL.jpg",
       "rating": "2",

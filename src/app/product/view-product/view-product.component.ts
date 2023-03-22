@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductserviceService } from '../productservice.service';
 
 @Component({
@@ -12,14 +12,21 @@ export class ViewProductComponent {
   prodid:any
   productdata:any
 
-  constructor(private ar:ActivatedRoute,private ps:ProductserviceService){}
+
+
+  constructor(private ar:ActivatedRoute,private ps:ProductserviceService,private router:Router){}
 
   ngOnInit():void{
     this.ar.params.subscribe((data:any)=>{
       this.prodid=data["id"]
     })
     this.ps.viewproduct(this.prodid).subscribe((item :  any)=>{
-      this.productdata=item
+      this.productdata=item  
     })
+  }
+
+  addtocart(){    
+    localStorage.setItem("cart",this.productdata.id)
+    this.router.navigateByUrl("product/cart")
   }
 }

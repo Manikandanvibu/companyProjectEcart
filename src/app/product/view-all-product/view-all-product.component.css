@@ -1,0 +1,5 @@
+#i4:hover{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all 1s ease;
+}

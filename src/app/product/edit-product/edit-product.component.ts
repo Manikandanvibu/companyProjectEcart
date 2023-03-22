@@ -34,6 +34,7 @@ export class EditProductComponent {
       is_available : form.value.is_available,
       productImg : form.value.productImg,
       rating : form.value.rating,
+      discount : form.value.discount,
       review : form.value.review,
       vendor_name : form.value.vendor_name,
       warranty : form.value.warranty

@@ -17,6 +17,7 @@ export class ViewAllProductComponent {
     ngOnInit() : void {
       this.ps.viewAllProducts().subscribe((data:any) =>{
         this.productlist=data
+        this.filter('')
       })
 
           // access data from behaviour subject
