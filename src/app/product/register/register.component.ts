@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProductserviceService } from '../productservice.service';
 
 @Component({
   selector: 'app-register',
@@ -9,14 +10,22 @@ import { Router } from '@angular/router';
 export class RegisterComponent {
 
 
-  constructor(private router:Router){}
+  constructor(private router:Router,private ps:ProductserviceService){}
 
   register(a :any,b : any){
-    localStorage.setItem("uname",a.value);
-    localStorage.setItem("pass",b.value);
-    alert("Registration successfull")
-    this.router.navigateByUrl("product/login")
+    var uname = a.value;
+    var psw = b.value;
 
+    this.ps.register(uname,psw).subscribe((result:any) => {
+      alert(result.message)
+      this.router.navigateByUrl('product/login')
+    },
+    // this result is to take the error case if same user registering
+    result=>{
+      alert(result.error.message)
+      this.router.navigateByUrl('product/login')
+    }
+    )
   }
 
-}
+  }

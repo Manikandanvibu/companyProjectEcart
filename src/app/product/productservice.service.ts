@@ -39,5 +39,25 @@ export class ProductserviceService {
     return this.http.get('https://project-data.onrender.com/products/'+id)
   }
 
+  // new
+    register(uname:any,psw:any){
+
+    // data to send in body
+    const data={
+    uname,psw
+    }
+    // api call to post data
+    return this.http.post('http://localhost:3000/register',data)
+  }
+  
+  login(uname:any,psw:any){
+    const data={
+      uname,psw
+      }
+      // api call to post data
+      return this.http.post('http://localhost:3000/login',data)
+
+  }
+
 
 }

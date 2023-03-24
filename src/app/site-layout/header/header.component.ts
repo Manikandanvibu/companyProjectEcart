@@ -13,14 +13,12 @@ export class HeaderComponent {
 
  }
 
+ user :any
  ngOnInit(): void{
-  // this.setname = localStorage.getItem("uname") || "";
+    this.user = localStorage.getItem("currentuser")
  }
 
  searchterm :any 
-//  setname : any
-
-
 
  search(event:any){
   this.searchterm=event.target.value
@@ -31,5 +29,8 @@ export class HeaderComponent {
   this.router.navigateByUrl("product/cart")
  }
 
+ logout(){
+  localStorage.setItem('currentuser', "");
+ }
 
 }
